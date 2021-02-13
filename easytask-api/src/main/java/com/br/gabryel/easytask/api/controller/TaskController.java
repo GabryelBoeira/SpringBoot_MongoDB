@@ -10,15 +10,15 @@ import org.springframework.web.bind.annotation.*;
 public class TaskController {
 
     @Autowired
-    private TaskService taskService;
+    TaskService taskService;
 
     @GetMapping
     public String hello() {
         return "Bem vindo ao microserviço easyTask";
     }
 
-//    @PostMapping("/tarefas")
-//    public Task hello(@ResponseBody(Task task)) {
-//        return taskService.save(task);
-//    }
+    @PostMapping("/task")
+    public Task createTask(@RequestBody Task task) {
+        return taskService.save(task);
+    }
 }
