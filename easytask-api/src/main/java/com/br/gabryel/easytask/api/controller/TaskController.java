@@ -34,4 +34,8 @@ public class TaskController {
         return taskService.getTask(id);
     }
 
+    @GetMapping("/task/description/{description}")
+    public List<Task> taskDescription(@PathVariable String description) {
+        return taskService.getTaskDescription(description);
+    }
 }

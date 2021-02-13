@@ -9,4 +9,5 @@ public interface TaskService {
     public Task save(Task task);
     public List<Task> findAll();
     public Task getTask(String id);
+    public List<Task> getTaskDescription(String description);
 }

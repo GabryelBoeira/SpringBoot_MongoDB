@@ -28,4 +28,10 @@ public class TaskServiceImpl implements TaskService {
     public Task getTask(String id) {
         return taskRepository.findById(id).orElse(null);
     }
+
+    @Override
+    public List<Task> getTaskDescription(String description) {
+        return taskRepository.findByDescriptionLikeIgnoreCase(description);
+    }
+
 }
