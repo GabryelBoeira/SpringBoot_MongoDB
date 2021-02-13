@@ -34,8 +34,9 @@ public class TaskController {
         return taskService.getTask(id);
     }
 
-    @GetMapping("/task/description/{description}")
-    public List<Task> taskDescription(@PathVariable String description) {
-        return taskService.getTaskDescription(description);
+    @PutMapping("/task/edit")
+    public Task editTask(@RequestBody Task task) {
+        return taskService.save(task);
     }
+
 }
