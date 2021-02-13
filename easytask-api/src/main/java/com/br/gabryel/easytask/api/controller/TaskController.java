@@ -5,6 +5,8 @@ import com.br.gabryel.easytask.api.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/")
 public class TaskController {
@@ -21,4 +23,10 @@ public class TaskController {
     public Task createTask(@RequestBody Task task) {
         return taskService.save(task);
     }
+
+    @GetMapping("/task/find-all")
+    public List<Task> getAll() {
+        return taskService.findAll();
+    }
+
 }
