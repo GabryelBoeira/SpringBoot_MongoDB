@@ -19,7 +19,7 @@ public class TaskController {
         return "Bem vindo ao microserviço easyTask";
     }
 
-    @PostMapping("/task")
+    @PostMapping("/task/new")
     public Task createTask(@RequestBody Task task) {
         return taskService.save(task);
     }
@@ -27,6 +27,11 @@ public class TaskController {
     @GetMapping("/task/find-all")
     public List<Task> getAll() {
         return taskService.findAll();
+    }
+
+    @GetMapping("/task/{id}")
+    public Task getTask(@PathVariable String id) {
+        return taskService.getTask(id);
     }
 
 }
