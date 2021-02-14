@@ -10,4 +10,7 @@ public interface TaskService {
     public List<Task> findAll();
     public Task getTask(String id);
     public List<Task> getTaskDescription(String description);
+    public Task update(Task task);
+    public void deleteById(String id);
+
 }

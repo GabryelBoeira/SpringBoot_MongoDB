@@ -1,5 +1,6 @@
 package com.br.gabryel.easytask.api.model;
 
+import com.br.gabryel.easytask.api.enums.TaskStatusEnum;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

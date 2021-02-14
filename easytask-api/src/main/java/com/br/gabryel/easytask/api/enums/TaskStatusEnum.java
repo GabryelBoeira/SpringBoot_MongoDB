@@ -1,4 +1,4 @@
-package com.br.gabryel.easytask.api.model;
+package com.br.gabryel.easytask.api.enums;
 
 import lombok.Getter;
 

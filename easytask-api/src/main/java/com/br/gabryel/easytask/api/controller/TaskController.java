@@ -41,7 +41,11 @@ public class TaskController {
 
     @PutMapping("/task/edit")
     public Task editTask(@RequestBody Task task) {
-        return taskService.save(task);
+        return taskService.update(task);
     }
 
+    @DeleteMapping("/task/{id}")
+    public void deleteTask(@PathVariable String id) {
+        taskService.deleteById(id);
+    }
 }
