@@ -8,8 +8,10 @@ Curso de Udemy micro serviço REST com Spring Boot, MongoDB e Java
 
 ## Configuração dos EndPoints para o Postman
 
-- Importar arquivo [.json]() com as configurações de acesso.
+- Importar arquivo [.json](https://github.com/GabryelBoeira/SpringBoot_MongoDB/blob/main/Easy%20Task.postman_collection.json) com as configurações de acesso.
 - Não é preciso utilizar autenticação para fazer requisições a esta API.
+
+- Acesso a CRUD da aplicação.
 
 ## Versão
 
