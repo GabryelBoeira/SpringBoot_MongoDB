@@ -25,8 +25,7 @@ Curso de Udemy micro serviço REST com Spring Boot, MongoDB e Java
 | [Lombok](https://mvnrepository.com/artifact/org.projectlombok/lombok/1.18.18) | 1.18.18       |
 | [Postman](https://www.postman.com/downloads/)                                 | 8.0.5         |
 
-</br>
-</br>
-- [Certificado de Conclusão](https://www.udemy.com/certificate/UC-085f007f-6bf3-4c76-8fb2-4d84dab8f573)
+
+- Certificado de Conclusão [acessar](https://www.udemy.com/certificate/UC-085f007f-6bf3-4c76-8fb2-4d84dab8f573)
 
 **** Este é um Projeto Concluido ****
